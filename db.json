@@ -411,7 +411,7 @@
       "quantity": 0,
       "price": 88,
       "currency": "$",
-      "image": "/products/Tott-25-26-home.jpg",
+      "image": "public/products/Tott-25-26-home.jpg",
       "category": "Home",
       "description": "The official Tottenham Hotspur home jersey for the 2025-26 season."
     },
@@ -424,7 +424,7 @@
       "quantity": 0,
       "price": 65,
       "currency": "$",
-      "image": "/products/barcelona 2018-19 home.jpg",
+      "image": "/products/barcelona-2018-19-home.jpg",
       "category": "Home",
       "description": "The official FC Barcelona home jersey for the 2018-19 season."
     },
