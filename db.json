@@ -411,7 +411,7 @@
       "quantity": 0,
       "price": 88,
       "currency": "$",
-      "image": "public/products/Tott-25-26-home.jpg",
+      "image": "/products/Tott-25-26-home.jpg",
       "category": "Home",
       "description": "The official Tottenham Hotspur home jersey for the 2025-26 season."
     },
