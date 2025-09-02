@@ -345,7 +345,7 @@
               "quantity": 1,
               "price": 65,
               "currency": "$",
-              "image": "/products/barcelona 2018-19 home.jpg",
+              "image": "/products/barcelona-2018-19-home.jpg",
               "category": "Home",
               "description": "The official FC Barcelona home jersey for the 2018-19 season."
             }
@@ -376,7 +376,7 @@
               "quantity": 1,
               "price": 65,
               "currency": "$",
-              "image": "/products/barcelona 2018-19 home.jpg",
+              "image": "/products/barcelona-2018-19-home.jpg",
               "category": "Home",
               "description": "The official FC Barcelona home jersey for the 2018-19 season."
             }
@@ -580,7 +580,7 @@
       "quantity": 1,
       "price": 95,
       "currency": "$",
-      "image": "/products/germany-26 home.jpg",
+      "image": "/products/germany-26-home.jpg",
       "category": "Home",
       "description": "The official Germany home jersey for the 1990 season."
     },
@@ -645,7 +645,7 @@
       "quantity": 1,
       "price": 60,
       "currency": "$",
-      "image": "/products/barcelona 2014-15 home.jpg",
+      "image": "/products/barcelona-2014-15-home.jpg",
       "category": "Home",
       "description": "The official FC Barcelona home jersey for the 2014-15 season."
     },
