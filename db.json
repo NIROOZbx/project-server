@@ -1,87 +1,24 @@
 {
   "admin": [
+    
+  ],
+  "users": [
     {
       "email": "admin@gmail.com",
       "password": "admin@123",
-      "id": "9eaf"
-    }
-  ],
-  "users": [
+      "id": "9eaf",
+      "role":"admin"
+    },
     {
       "id": "f3c3",
       "name": "harry",
       "email": "harry@gmail.com",
       "password": "12341234",
+       "role":"user",
       "isAuthenticated": true,
-      "cart": [
-        {
-          "id": "8",
-          "name": "Liverpool Home Jersey 2025-26",
-          "team": "Liverpool",
-          "league": "Premier League",
-          "season": 2025,
-          "quantity": 1,
-          "price": 95,
-          "currency": "$",
-          "image": "/products/liverpool-25-26-home.jpg",
-          "category": "Home",
-          "description": "The official Liverpool home jersey for the 2025-26 season."
-        },
-        {
-          "id": "11",
-          "name": "Bayern Munich Away Jersey 2025-26",
-          "team": "Bayern Munich",
-          "league": "Bundesliga",
-          "season": 2025,
-          "quantity": 1,
-          "price": 89,
-          "currency": "$",
-          "image": "/products/bayern-25-26-away.jpg",
-          "category": "Away",
-          "description": "The official Bayern Munich away jersey for the 2025-26 season."
-        },
-        {
-          "id": "4",
-          "name": "Real Madrid Third Jersey 2016-17",
-          "team": "Real Madrid",
-          "league": "Laliga",
-          "season": 2016,
-          "quantity": 1,
-          "price": 93,
-          "currency": "$",
-          "image": "/products/real-madrid-16-17-third-kit.jpg",
-          "category": "Third",
-          "description": "The official Real Madrid third jersey for the 2016-17 season."
-        }
-      ],
+      "cart": [],
       "wishlist": [
         {
-          "id": "8",
-          "name": "Liverpool Home Jersey 2025-26",
-          "team": "Liverpool",
-          "league": "Premier League",
-          "season": 2025,
-          "quantity": 1,
-          "price": 95,
-          "currency": "$",
-          "image": "/products/liverpool-25-26-home.jpg",
-          "category": "Home",
-          "description": "The official Liverpool home jersey for the 2025-26 season."
-        },
-        {
-          "id": "17",
-          "name": "AC Milan Home Jersey 2025-26",
-          "team": "AC Milan",
-          "league": "Serie A",
-          "season": 2025,
-          "quantity": 1,
-          "price": 92,
-          "currency": "$",
-          "image": "/products/milan-25-26-home.jpg",
-          "category": "Home",
-          "description": "The official AC Milan home jersey for the 2025-26 season."
-        },
-        {
           "id": "11",
           "name": "Bayern Munich Away Jersey 2025-26",
           "team": "Bayern Munich",
@@ -93,29 +30,61 @@
           "image": "/products/bayern-25-26-away.jpg",
           "category": "Away",
           "description": "The official Bayern Munich away jersey for the 2025-26 season."
-        },
-        {
-          "id": "18",
-          "name": "Manchester United Home Kit 25-26",
-          "team": "Manchester United",
-          "league": "Premier League",
-          "season": 2025,
-          "quantity": 1,
-          "price": 93,
-          "currency": "$",
-          "image": "/products/united-25-26-home.jpg",
-          "category": "Home",
-          "description": "The official Manchester United home jersey for the 2025-26 season."
         }
       ],
       "order": [
+        {
+          "id": 1758656259003,
+          "price": 166,
+          "payment": "cod",
+          "date": "Wed, 24 Sept, 2025, 01:07",
+          "status": "Success",
+          "delivery": "Delivered",
+          "products": [
+            {
+              "id": "22",
+              "name": "Spain Home Jersey 2025",
+              "team": "Spain",
+              "league": "International",
+              "season": 2025,
+              "quantity": 1,
+              "price": 91,
+              "currency": "$",
+              "image": "/products/spain-25.jpg",
+              "category": "Home",
+              "description": "The official Spain home jersey for the 2025 season."
+            },
+            {
+              "id": "7",
+              "name": "Arsenal Away Jersey 2020-21",
+              "team": "Arsenal",
+              "league": "Premier League",
+              "season": 2020,
+              "quantity": 1,
+              "price": 75,
+              "currency": "$",
+              "image": "/products/arsenal-20-21-away.jpg",
+              "category": "Away",
+              "description": "The official Arsenal away jersey for the 2020-21 season.",
+              "reviews": []
+            }
+          ],
+          "address": {
+            "name": "SFSF",
+            "number": "5434534534",
+            "pincode": "545343",
+            "State": "kerala",
+            "address": "kochi",
+            "city": "fdsfsf"
+          }
+        },
         {
           "id": 1756016610503,
           "price": 134,
           "payment": "cod",
           "date": "Sun, 24 Aug, 2025, 11:53",
           "status": "Cancelled",
-          "delivery": "Cancelled",
+          "delivery": "Shipped",
           "products": [
             {
               "id": 3,
@@ -266,12 +235,12 @@
         }
       ],
       "shippingAddress": {
-        "name": "tffgfgfg",
-        "number": "5464564654",
-        "pincode": "646654",
-        "State": "fgn",
-        "address": "nbfngn",
-        "city": "nfgnh"
+        "name": "SFSF",
+        "number": "5434534534",
+        "pincode": "545343",
+        "State": "kerala",
+        "address": "kochi",
+        "city": "fdsfsf"
       }
     },
     {
@@ -279,6 +248,7 @@
       "name": "kokachi",
       "email": "kokachi@gmail.com",
       "password": "kokachi123",
+       "role":"user",
       "isAuthenticated": true,
       "cart": [],
       "wishlist": [
@@ -297,6 +267,37 @@
         }
       ],
       "order": [
+        {
+          "id": 1758560839444,
+          "price": 125,
+          "payment": "cod",
+          "date": "Mon, 22 Sept, 2025, 22:37",
+          "status": "Success",
+          "delivery": "Processing",
+          "products": [
+            {
+              "id": "7",
+              "name": "Arsenal Away Jersey 2020-21",
+              "team": "Arsenal",
+              "league": "Premier League",
+              "season": 2020,
+              "quantity": 1,
+              "price": 75,
+              "currency": "$",
+              "image": "/products/arsenal-20-21-away.jpg",
+              "category": "Away",
+              "description": "The official Arsenal away jersey for the 2020-21 season."
+            }
+          ],
+          "address": {
+            "name": "Nirooz",
+            "number": "5345345345",
+            "pincode": "534533",
+            "State": "Kerala",
+            "address": "north colony 6th road",
+            "city": "kollam"
+          }
+        },
         {
           "id": 1756202682614,
           "price": 138,
@@ -393,12 +394,23 @@
       ],
       "shippingAddress": {
         "name": "Nirooz",
-        "number": "7834987394",
-        "pincode": "783478",
-        "State": "Kerala ",
-        "address": "kozhikode town",
-        "city": "kozhikode"
+        "number": "5345345345",
+        "pincode": "534533",
+        "State": "Kerala",
+        "address": "north colony 6th road",
+        "city": "kollam"
       }
+    },
+    {
+      "id": "b22b",
+      "name": "nirooz",
+      "email": "test@ample.com",
+      "password": "12341234",
+       "role":"user",
+      "isAuthenticated": true,
+      "cart": [],
+      "wishlist": [],
+      "order": []
     }
   ],
   "products": [
@@ -411,6 +423,7 @@
       "quantity": 0,
       "price": 88,
       "currency": "$",
+      "reviews": [],
       "image": "/products/Tott-25-26-home.jpg",
       "category": "Home",
       "description": "The official Tottenham Hotspur home jersey for the 2025-26 season."
@@ -452,7 +465,8 @@
       "currency": "$",
       "image": "/products/real-madrid-16-17-third-kit.jpg",
       "category": "Third",
-      "description": "The official Real Madrid third jersey for the 2016-17 season."
+      "description": "The official Real Madrid third jersey for the 2016-17 season.",
+      "reviews": []
     },
     {
       "id": "6",
@@ -478,7 +492,8 @@
       "currency": "$",
       "image": "/products/arsenal-20-21-away.jpg",
       "category": "Away",
-      "description": "The official Arsenal away jersey for the 2020-21 season."
+      "description": "The official Arsenal away jersey for the 2020-21 season.",
+      "reviews": []
     },
     {
       "id": "8",
@@ -1194,6 +1209,36 @@
       "image": "/products/ajax-25-26.jpg",
       "category": "Home",
       "description": "The Adidas AFC Ajax 2025-2026 home football shirt proudly features the club's iconic traditional white base with a broad central red stripe. The sleeves are white, complemented by red Adidas stripes on the shoulders."
+    }
+  ],
+  "notifications": [
+    {
+      "id": "69a0",
+      "userId": "f3c3",
+      "header": "Server Maintenance",
+      "message": "The server will be down for maintenance from 2 AM to 4 AM.",
+      "date": "2025-09-23T10:39:30.244Z"
+    },
+    {
+      "id": "b8b0",
+      "userId": "dcfa",
+      "header": "Server Maintenance",
+      "message": "The server will be down for maintenance from 2 AM to 4 AM.",
+      "date": "2025-09-23T10:39:30.257Z"
+    },
+    {
+      "id": "6127",
+      "userId": "f3c3",
+      "header": "Your Special Offer Awaits! 🎉 Shop Now and Save!",
+      "message": "Great news! We’ve got an exclusive offer just for you. Enjoy 50 off your next purchase with code NEW50at checkout. Hurry, this deal ends in 48 hours!",
+      "date": "2025-09-23T11:31:27.996Z"
+    },
+    {
+      "id": "988c",
+      "userId": "f3c3",
+      "header": "Your order has been confirmed",
+      "message": "\"Your order has been confirmed and is on the way. Thank you for shopping with us!\"",
+      "date": "2025-09-24T06:14:58.915Z"
     }
   ]
 }
