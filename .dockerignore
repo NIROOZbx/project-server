@@ -1,0 +1,54 @@
+#############################
+# GO BACKEND .dockerignore
+#############################
+
+# --- SECTION 1: The "Must Haves" (Not in gitignore) ---
+# Ignore the Git history itself.
+# If you don't add this, Docker copies the entire history of every change you ever made.
+.git
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# --- SECTION 2: Binaries (From your list) ---
+# We ignore these so Docker doesn't try to run your Windows .exe files
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# --- SECTION 3: Build outputs ---
+/build
+/dist
+
+# --- SECTION 4: Dependencies ---
+# Let Docker download fresh dependencies inside the container.
+vendor/
+
+# --- SECTION 5: Logs & System Files ---
+*.log
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# --- SECTION 6: SECURITY (Crucial) ---
+# Never let these get baked into the image layer!
+.env
+.env.*
+*.env
+config.yaml
+config.yml
+config.json
+config-local.json
+*.key
+*.pem
+
+# --- SECTION 7: Temp Files ---
+/tmp
+/cache

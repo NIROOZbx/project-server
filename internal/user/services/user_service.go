@@ -3,7 +3,6 @@ package services
 import (
 	"context"
 	"errors"
-	"fmt"
 	"mime/multipart"
 
 	authRepo "github.com/NIROOZbx/project-server/internal/auth/repositories"
@@ -19,8 +18,6 @@ import (
 func GetUserProfile(userId uint) (*userModel.UserProfile, error) {
 
 	user, err := userRepo.GetUserFromDB(userId)
-
-	fmt.Println("User data from db", user)
 
 	if err != nil {
 		return nil, err

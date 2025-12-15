@@ -1,0 +1,42 @@
+
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      - DSN=host=db user=postgres password=${POSTGRES_PASSWORD} dbname=ecommerce_db port=5432 sslmode=disable
+    depends_on:
+      db:
+        condition: service_healthy
+
+      
+  db:
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=ecommerce_db
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s 
+      timeout: 5s 
+      retries: 5 
+      start_period: 10s
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+
+
+
+    
+      
+
+

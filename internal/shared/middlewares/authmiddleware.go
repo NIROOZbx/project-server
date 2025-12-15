@@ -27,7 +27,7 @@ func AuthMiddleware() gin.HandlerFunc {
 
 		tokenString := strings.TrimPrefix(authHeader, "Bearer ")
 
-		fmt.Println("Access token",tokenString)
+		
 
 		if tokenString == authHeader {
 			c.JSON(http.StatusUnauthorized, gin.H{"message": "Invalid token format"})

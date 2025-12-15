@@ -1,6 +1,7 @@
 package config
 
 import (
+
 	"log"
 	"os"
 
@@ -27,7 +28,6 @@ func LoadEnv() {
 
 	if err != nil {
 		log.Println("⚠️ .env file not found, using system env variables")
-		return
 	}
 
 	dbURL := os.Getenv("DSN")
@@ -69,13 +69,14 @@ func LoadEnv() {
 	cloudinaryURL := os.Getenv("CLOUDINARY_URL")
 
 	if cloudinaryURL == "" {
-		log.Fatal("❌ Fatal Error: SENDER_EMAIL is not set.")
+		log.Fatal("❌ Fatal Error:CLOUDINARY_URL is not set.")
 	}
 	resetSecret := os.Getenv("JWT_RESET_SECRET")
 	if resetSecret == "" {
 		log.Fatal("❌ Fatal Error: JWT_RESET_SECRET is not set.")
 
 	}
+	
 	AppConfig = &Config{
 		DSN:            dbURL,
 		AccessSecret:   accessSecret,
