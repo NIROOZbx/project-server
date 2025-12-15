@@ -28,7 +28,9 @@ jobs:
             - name: Pull docker image
               run: docker pull nirooz/jersey-hub:latest
             - name: Delete old container
-              run : docker rm go-app-container
+              run: |
+                docker stop go-app-container || true
+                docker rm go-app-container || true
             - name: Run docker container
               run: |
                 docker run -d \
