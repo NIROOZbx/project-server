@@ -15,7 +15,7 @@ import (
 const (
 	cookieName   = "user_session"
 	cookieMaxAge = 60 * 60 * 24 * 7 // 7 days in seconds
-	cookieDomain = "localhost"
+	cookieDomain = ""
 )
 
 // FieldValidator translates Gin/Validator error tags (e.g., "min", "required")
@@ -108,7 +108,9 @@ func LoginHandler(c *gin.Context) {
 		return
 	}
 
-	c.SetCookie(cookieName, refreshToken, cookieMaxAge, "/", cookieDomain, false, true)
+	c.SetSameSite(http.SameSiteNoneMode)
+
+	c.SetCookie(cookieName, refreshToken, cookieMaxAge, "/", cookieDomain, true, true)
 	c.JSON(200, gin.H{"accessToken": accessToken, "role": userRole, "name": userName, "email": userEmail})
 
 }
@@ -132,7 +134,9 @@ func RefreshHandler(c *gin.Context) {
 		return
 	}
 
-	c.SetCookie(cookieName, refreshToken, cookieMaxAge, "/", cookieDomain, false, true)
+	c.SetSameSite(http.SameSiteNoneMode)
+
+	c.SetCookie(cookieName, refreshToken, cookieMaxAge, "/", cookieDomain, true, true)
 
 	c.JSON(200, gin.H{"accessToken": accessToken})
 
@@ -149,7 +153,9 @@ func LogoutHandler(c *gin.Context) {
 		return
 	}
 
-	c.SetCookie("user_session", "", -1, "/", "localhost", false, true)
+	c.SetSameSite(http.SameSiteNoneMode)
+
+	c.SetCookie("user_session", "", -1, "/", "localhost", true, true)
 	c.JSON(http.StatusOK, gin.H{"message": "Logged out successfully."})
 
 }
