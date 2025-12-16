@@ -17,7 +17,7 @@ func RateLimiter() gin.HandlerFunc{
 
 		limiter:=cache.GetRateLimiter()
 
-		res,err:=limiter.Allow(ctx,clientIP,redis_rate.PerMinute(10))
+		res,err:=limiter.Allow(ctx,clientIP,redis_rate.PerMinute(30))
 
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Rate limit check failed"})
