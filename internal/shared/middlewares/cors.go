@@ -9,7 +9,7 @@ func CORSMiddleware() gin.HandlerFunc {
 
 	config:=cors.DefaultConfig()
 
-	config.AllowOrigins = []string{"http://localhost:5173"}
+	config.AllowOrigins = []string{"http://localhost:5173","https://e-commerce-project-six-kappa.vercel.app"}
 	config.AllowMethods = []string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"}
 	config.AllowHeaders = []string{"Origin", "Content-Type", "Authorization", "Accept"}
 	config.AllowCredentials = true
