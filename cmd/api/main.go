@@ -24,7 +24,7 @@ func main() {
 
 	router := gin.Default()
 
-	router.Use(middlewares.CORSMiddleware(),middlewares.RateLimiter())
+	router.Use(middlewares.CORSMiddleware())
 
 	notifHandler,notifService:=setup.SetupDI()
 

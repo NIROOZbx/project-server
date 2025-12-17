@@ -15,13 +15,13 @@ func LoginUser(LoginData models.LoginData) (string, string,string,string,string,
 	userData, err := repositories.FindUserByEmail(LoginData.Email)
 
 	if err == gorm.ErrRecordNotFound {
-		
 		return "", "","","","", errors.New("invalid credentials")
 	}
-
+	
 	if !userData.IsVerified {
 		return "", "","","","", errors.New("email not verified")
 	}
+	
 
 	if userData.IsBlocked {
 		

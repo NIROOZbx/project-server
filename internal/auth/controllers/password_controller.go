@@ -46,6 +46,7 @@ func ForgotPasswordHandler(c *gin.Context) {
 
 	c.JSON(http.StatusOK, gin.H{"message": "If an account with that email exists, a password reset code has been sent."})
 
+	
 }
 
 // VerifyResetOTPHandler
